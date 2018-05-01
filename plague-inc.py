@@ -12,9 +12,6 @@ You must return the number of he person that will take the least amount of days 
 
 Note: If not everyone can be infected (ex: Someone with no friends or family :c ), return -1
 """
-
-import pprint
-
 class Node(object):
 
     def __init__(self, uid, relations):
@@ -55,8 +52,9 @@ class Graph(object):
             n.cost = self.search(n)
 
     def search(self, node):
-        for uid in node.relations:
-            pass
+        #TODO this function is not done yet...
+        for i in node.relations:
+            self.nodes[i].relations
 
 
 def test5():
